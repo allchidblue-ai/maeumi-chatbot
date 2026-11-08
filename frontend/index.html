@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>마음이</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <main id="app">
+
+
+        <!-- ======================
+             시작화면
+             ====================== -->
+        <section id="start-screen">
+
+            <img
+                class="start-character"
+                src="assets/images/penguin-body.png"
+                alt="마음이 캐릭터"
+            >
+
+            <h1>언제나 너의 편</h1>
+
+            <p class="start-message">
+                오늘도 나는 너의 이야기를 기다리고 있어.
+            </p>
+
+            <button id="start-button">
+                시작하기
+            </button>
+
+        </section>
+
+
+
+        <!-- ======================
+             채팅화면
+             ====================== -->
+        <section id="chat-screen" class="hidden">
+
+
+            <!-- 상단 영역 -->
+            <header id="chat-header">
+
+                <button 
+                    id="dark-button"
+                    type="button"
+                >
+                    DARK
+                </button>
+
+
+                <div id="chat-title">
+
+                    <img
+                        class="mini-character"
+                        src="assets/images/penguin-neutral.png"
+                        alt="마음이"
+                    >
+
+                    <div>
+                        <h2>마음이</h2>
+                        <p>언제나 너의 편</p>
+                    </div>
+
+                </div>
+
+
+                <button 
+                    id="new-chat-button"
+                    type="button"
+                >
+                    +
+                </button>
+
+            </header>
+
+
+
+            <!-- ======================
+                 대화가 나타나는 공간
+                 ====================== -->
+            <div id="messages">
+                
+                <!-- 처음 보여주는 마음이 메시지 -->
+                <div class="message-row assistant">
+
+                    <img
+                        class="message-character"
+                        src="assets/images/penguin-neutral.png"
+                        alt="마음이 캐릭터"
+                    >
+
+                    <div class="message-bubble assistant">오늘은 어떤 하루였어?</div>
+                    
+                </div>
+
+            </div>
+
+
+
+            <!-- ======================
+                 입력영역  
+                 ====================== -->
+            <div id="input-area">
+
+                <textarea
+                    id="message-input"
+                    placeholder="너의 하루를 이야기해줄래?"
+                    rows="1"
+                ></textarea>
+
+                <button 
+                    id="send-button"
+                    type="button"
+                >
+                    보내기
+                </button>
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

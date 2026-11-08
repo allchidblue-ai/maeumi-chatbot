@@ -1,0 +1,9 @@
+# API Key가 들어 있는 파일
+backend/.env
+
+# 가상환경
+.venv/
+backend/.venv/
+
+# 파이썬 캐시
+__pycache__/
