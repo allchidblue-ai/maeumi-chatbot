@@ -94,3 +94,7 @@ backend/.env 파일에 API Key가 필요합니다.
 - max_tokens는 답의 길이가 아니라 최대 출력량이라는 것을, 버그를 재현하고 측정하며 알게 됐습니다.
 - isWaiting·finally로 중복 전송을 막고, AbortController·chatSessionId로 이전 대화의 답이 섞이지 않게 하는 방법을 배웠습니다.
 - 문제가 생기면 바로 코드를 고치기보다 재현하고, 실제 결과를 확인한 뒤 원인을 판단하는 과정을 익혔습니다.
+
+## Project Status
+
+Educational prototype completed.
